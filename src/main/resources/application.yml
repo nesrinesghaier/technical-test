@@ -1,3 +1,9 @@
 graphql:
   packages:
     - "com.gorillas.technicaltest"
+
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/delivery-db
+    username: gorillas-test
+    password: gorillas-test
