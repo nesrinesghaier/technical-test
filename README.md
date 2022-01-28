@@ -15,3 +15,12 @@ Then run:
 ```docker
 docker-compose up -d
 ```
+
+##Usage
+First you need to build the project then you just run the main class of the spring boot application.
+
+```maven
+mvn clean install
+```
+
+Open your browser on http://localhost:8080/playground so you can test available endpoints. 
