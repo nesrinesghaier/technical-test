@@ -1,4 +1,4 @@
-package com.gorillas.technicaltest.data
+package com.gorillas.technicaltest.entity
 
 import com.expediagroup.graphql.generator.annotations.GraphQLName
 import org.springframework.data.annotation.Id

@@ -1,7 +1,7 @@
 package com.gorillas.technicaltest.mutation
 
 import com.expediagroup.graphql.server.operations.Mutation
-import com.gorillas.technicaltest.data.Delivery
+import com.gorillas.technicaltest.entity.Delivery
 import com.gorillas.technicaltest.repository.DeliveryRepository
 import kotlinx.coroutines.reactive.awaitFirst
 import org.springframework.stereotype.Component
