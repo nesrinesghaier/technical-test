@@ -1,5 +1,6 @@
 package com.gorillas.technicaltest.mutation
 
+import com.expediagroup.graphql.generator.annotations.GraphQLDescription
 import com.expediagroup.graphql.server.operations.Mutation
 import com.gorillas.technicaltest.entity.Delivery
 import com.gorillas.technicaltest.repository.DeliveryRepository
@@ -11,6 +12,7 @@ import java.time.format.DateTimeFormatter
 @Component
 class DeliveryMutation(private val deliveryRepository: DeliveryRepository) : Mutation {
 
+    @GraphQLDescription("Mark a delivery as received")
     suspend fun markDeliveryAsReceived(id: String): Delivery {
         val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSSX")
         val existingDelivery = deliveryRepository.findById(id).awaitFirst()

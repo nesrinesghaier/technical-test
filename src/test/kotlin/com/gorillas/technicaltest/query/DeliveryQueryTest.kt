@@ -17,7 +17,7 @@ class DeliveryQueryTest(@Autowired private val testClient: WebTestClient) {
 
     @Test
     fun `verify expected deliveries query`() {
-        val query = "getAllDeliveries"
+        val query = "listAllDeliveries"
         val received = "false"
 
         testClient.post()
@@ -33,7 +33,7 @@ class DeliveryQueryTest(@Autowired private val testClient: WebTestClient) {
 
     @Test
     fun `verify received deliveries query`() {
-        val query = "getAllDeliveries"
+        val query = "listAllDeliveries"
         val received = "true"
 
         testClient.post()
